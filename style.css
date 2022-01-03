@@ -128,5 +128,33 @@ footer{
     background-color: #009ee2;
     padding: 5px;
 }
-@keyframes animacionHome{
+@media only screen and (max-width: 600px){
+    .contenedor__header__titulo{
+        font-size: 20px;
+    }
+    .contenedor__header__imagen{
+        width: 100px; height: 44px;
+        margin-left: 5%;
+    }
+    header{
+        padding: 15px;
+    }
+    .contenedor{
+        grid-template-areas: 
+        "header header header header"
+        "contenedor__videoprincipal contenedor__videoprincipal contenedor__videoprincipal contenedor__videoprincipal"
+        "contenedor__mapaDeBicisendas contenedor__mapaDeBicisendas contenedor__mapaDeBicisendas contenedor__mapaDeBicisendas"
+        "contenedor__salidasGrupales contenedor__salidasGrupales contenedor__salidasGrupales contenedor__salidasGrupales"
+        "contenedor__alquilerDeBicis contenedor__alquilerDeBicis contenedor__alquilerDeBicis contenedor__alquilerDeBicis"
+        "contenedor__suscripcion contenedor__suscripcion contenedor__suscripcion contenedor__suscripcion"
+        "footer footer footer footer";
+    }
+}
+@media only screen and (max-width: 1023px){
+    .contenedor__header__titulo{
+        font-size: 25px;
+    }
+    .contenedor__header__imagen{
+        margin-left: 15%;
+    }
 }
